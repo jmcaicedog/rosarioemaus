@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
 
   return (
@@ -22,6 +24,7 @@ export default function Header() {
       {/* Logo */}
       <div className="w-10 h-10 relative">
         <Image
+          onClick={() => router.push("/")}
           src="/logo.jpg" // asegúrate de tener esta imagen en la carpeta public/
           alt="Logo del Rosario"
           fill
