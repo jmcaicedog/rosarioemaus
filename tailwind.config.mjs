@@ -10,6 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        body: ["var(--font-inter)"],
+        title: ["var(--font-playfair)"],
       },
     },
   },
