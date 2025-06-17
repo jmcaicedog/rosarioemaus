@@ -13,16 +13,16 @@ export default function Header() {
     <header className="w-full px-4 py-3 bg-white shadow-md flex items-center justify-between relative">
       {/* Menú hamburguesa */}
       <button onClick={() => setOpen(!open)} className="p-2 z-10">
-        <Menu className="w-6 h-6 text-[#A12330]" />
+        <Menu className="w-10 h-10 text-[#A12330]" />
       </button>
 
       {/* Título */}
-      <h1 className="text-lg font-semibold text-[#A12330] absolute left-1/2 transform -translate-x-1/2">
-        Emaus Cristo Rey
+      <h1 className="text-lg font-bold text-center text-[#A12330] absolute left-1/2 transform -translate-x-1/2">
+        SANTO ROSARIO<br/>Emaús Cristo Rey
       </h1>
 
       {/* Logo */}
-      <div className="w-10 h-10 relative">
+      <div className="w-14 h-14 relative">
         <Image
           onClick={() => router.push("/")}
           src="/logo.jpg" // asegúrate de tener esta imagen en la carpeta public/
