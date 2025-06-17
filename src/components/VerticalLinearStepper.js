@@ -24,20 +24,61 @@ const dia = DiaActual();
 
 const steps = [
   {
+    label: "Señal de la Cruz",
+    description: `Por la señal de la Santa Cruz, \nde nuestros enemigos, \nlíbranos Señor, Dios Nuestro. \n\nEn el nombre del Padre, del Hijo y del Espíritu Santo.
+      
+      Amén`,
+  },
+  {
     label: "Hora de María",
     description: `Si alguno de los asistentes tiene en sus manos La Hora de María, puede hacer la lectura correspondiente al día ${dia}`,
   },
   {
-    label: "Create an ad group",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
+    label: "Oración de sellamiento con la Sangre de Cristo",
+    description: `Señor, nos apropiamos de tu palabra que dice: 
+    “Porque esta es mi sangre con la que se selló el pacto, 
+    la cual es derramada a favor de muchos”.
+
+    Hoy queremos que selles nuestra vida personal con todas nuestras pertenencias.
+
+    • Sellamos nuestra salvación con la sangre preciosa de Jesucristo, para que todos nuestros afectos sean cubiertos.  
+    • Sellamos nuestro corazón, para que no entre ningún espíritu de rencor, miedo, tristeza o amargura.  
+    • Sellamos nuestra voluntad, para que esté siempre dispuesta a hacer el bien que deseamos y evitar el mal que no queremos.  
+    • Sellamos nuestra mente, para que entren solo pensamientos que nos lleven al gozo y la paz, de modo que al cambiar nuestra manera de pensar cambie nuestra manera de vivir.  
+    • Sellamos, con la preciosa sangre de Jesucristo, nuestros cuerpos para que reciban salud y queden protegidos del pecado, de enfermedades, de adulterio y de accidentes.  
+    • Sellamos nuestro pasado, para que toda herida que cause daño sea sanada con tu sangre bendita.  
+    • Sellamos nuestro presente, para que todas nuestras actividades queden cubiertas con tu sangre preciosa.  
+    • Sellamos nuestro futuro, para que nuestros planes y proyectos sean preservados de toda influencia del mal.  
+    • Sellamos, con la preciosa sangre de Jesucristo, a nuestros hijos (menciona sus nombres) para que sean protegidos de todo mal y peligro.  
+    • Sellamos nuestra economía; enséñanos a dar para recibir.  
+    • Sellamos nuestra boca, para que nuestras palabras sean de bendición y no de maldición.  
+    • Sellamos nuestros oídos, para que solo escuchemos la voz de Dios y hagamos su santa voluntad.  
+    • Sellamos nuestras manos, para que trabajen en tu obra y en beneficio de los demás.
+
+    Amén.`,
   },
   {
-    label: "Create an ad",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    label: "El Credo de los Apóstoles",
+    description: `Creo en Dios, Padre Todopoderoso, Creador del cielo y de la tierra.
+    Creo en Jesucristo, su único Hijo, Nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo.
+    Nació de Santa María Virgen, padeció bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado.
+    Descendió a los infiernos, al tercer día resucitó de entre los muertos, subió a los cielos y está sentado a la derecha de Dios, Padre Todopoderoso, y desde allí va a venir a juzgar a vivos y muertos.
+    Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna.
+    
+    Amén`,
+  },
+  {
+    label: "Acto de Contrición",
+    description: `Jesús, mi Señor y Redentor, yo me arrepiento de todos los pecados que he cometido hasta hoy y me pesa de todo corazón, porque con ellos he ofendido a un Dios tan bueno.
+    
+    Amén.`,
+  },
+  {
+    label: "Ofrecimiento del Santo Rosario",
+    description: `Señor, Dios nuestro, dirige y acepta todos nuestros pensamientos, palabras y obras.
+    Te rogamos Santa Madre de Dios, que aceptes nuestras súplicas y alcances de tu Hijo Santísimo, las gracias qeu necesitamos cada uno de los que aquí estamos presentes y también de las personas que se han encomendado a nuestras oraciones.
+    
+    En este espacio compartamos nuestras intenciones:`,
   },
 ];
 
@@ -71,6 +112,7 @@ export default function VerticalLinearStepper() {
                 },
                 ".Mui-active .MuiStepLabel-label": {
                   fontWeight: "bold", // Si quieres marcar la activa, también hereda tipografía
+                  color: "#A12330",
                 },
                 ".MuiStepIcon-root": {
                   color: "#bdbdbd", // color del disco (paso no activo, no completado)
@@ -86,7 +128,16 @@ export default function VerticalLinearStepper() {
               {step.label}
             </StepLabel>
             <StepContent sx={{ fontFamily: "inherit" }}>
-              <h3>{step.description}</h3>
+              <Typography
+                variant="body1"
+                sx={{
+                  whiteSpace: "pre-line",
+                  lineHeight: 1.8,
+                  fontFamily: "inherit",
+                }}
+              >
+                {step.description}
+              </Typography>
               <Box sx={{ mb: 2, typography: "inherit" }}>
                 <Button
                   variant="contained"
