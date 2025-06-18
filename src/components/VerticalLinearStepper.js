@@ -27,11 +27,15 @@ const steps = [
     label: "Señal de la Cruz",
     description: `Por la señal de la Santa Cruz, \nde nuestros enemigos, \nlíbranos Señor, Dios Nuestro. \n\nEn el nombre del Padre, del Hijo y del Espíritu Santo.
       
-      Amén`,
+      Amén.
+      
+      `,
   },
   {
     label: "Hora de María",
-    description: `Si alguno de los asistentes tiene en sus manos La Hora de María, puede hacer la lectura correspondiente al día ${dia}`,
+    description: `Si alguno de los asistentes tiene en sus manos La Hora de María, puede hacer la lectura correspondiente al día ${dia}
+    
+    `,
   },
   {
     label: "Oración de sellamiento con la Sangre de Cristo",
@@ -55,7 +59,9 @@ const steps = [
     • Sellamos nuestros oídos, para que solo escuchemos la voz de Dios y hagamos su santa voluntad.  
     • Sellamos nuestras manos, para que trabajen en tu obra y en beneficio de los demás.
 
-    Amén.`,
+    Amén.
+    
+    `,
   },
   {
     label: "El Credo de los Apóstoles",
@@ -65,20 +71,27 @@ const steps = [
     Descendió a los infiernos, al tercer día resucitó de entre los muertos, subió a los cielos y está sentado a la derecha de Dios, Padre Todopoderoso, y desde allí va a venir a juzgar a vivos y muertos.
     Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna.
     
-    Amén`,
+    Amén.
+    
+    `,
   },
   {
     label: "Acto de Contrición",
     description: `Jesús, mi Señor y Redentor, yo me arrepiento de todos los pecados que he cometido hasta hoy y me pesa de todo corazón, porque con ellos he ofendido a un Dios tan bueno.
     
-    Amén.`,
+    Amén.
+    
+    `,
   },
   {
     label: "Ofrecimiento del Santo Rosario",
     description: `Señor, Dios nuestro, dirige y acepta todos nuestros pensamientos, palabras y obras.
-    Te rogamos Santa Madre de Dios, que aceptes nuestras súplicas y alcances de tu Hijo Santísimo, las gracias qeu necesitamos cada uno de los que aquí estamos presentes y también de las personas que se han encomendado a nuestras oraciones.
+    Te rogamos Santa Madre de Dios, que aceptes nuestras súplicas y alcances de tu Hijo Santísimo, las gracias que necesitamos cada uno de los que aquí estamos presentes y también de las personas que se han encomendado a nuestras oraciones.
     
-    En este espacio compartamos nuestras intenciones:`,
+    En este espacio compartamos nuestras intenciones...
+    
+
+    `,
   },
 ];
 
@@ -104,24 +117,32 @@ export default function VerticalLinearStepper() {
           <Step key={step.label}>
             <StepLabel
               sx={{
+                // Texto por defecto (pasos pendientes)
                 ".MuiStepLabel-label": {
-                  fontFamily: "inherit", // Hereda la tipografía del sitio
-                  fontSize: "1rem", // Opcional: aseguras que el tamaño también sea consistente
-                  color: "#A12330", // Hereda el color del contenedor o body
+                  fontFamily: "inherit",
+                  fontSize: "1rem",
+                  color: "#9e9e9e", // gris para pasos aún no completados
                   fontWeight: "bold",
                 },
-                ".Mui-active .MuiStepLabel-label": {
-                  fontWeight: "bold", // Si quieres marcar la activa, también hereda tipografía
+                // Texto paso activo
+                ".MuiStepLabel-label.Mui-active": {
                   color: "#A12330",
                 },
+                // Texto paso completado
+                ".MuiStepLabel-label.Mui-completed": {
+                  color: "#26490f",
+                },
+                // Icono paso pendiente
                 ".MuiStepIcon-root": {
-                  color: "#bdbdbd", // color del disco (paso no activo, no completado)
+                  color: "#bdbdbd",
                 },
+                // Icono paso activo
                 ".MuiStepIcon-root.Mui-active": {
-                  color: "#A12330", // color del disco del paso activo
+                  color: "#A12330",
                 },
+                // Icono paso completado
                 ".MuiStepIcon-root.Mui-completed": {
-                  color: "#26490f", // color del disco del paso completado
+                  color: "#26490f",
                 },
               }}
             >
@@ -144,7 +165,9 @@ export default function VerticalLinearStepper() {
                   onClick={handleNext}
                   sx={{ mt: 1, mr: 1, bgcolor: "#A12330" }}
                 >
-                  {index === steps.length - 1 ? "Finalizar" : "Siguiente"}
+                  {index === steps.length - 1
+                    ? "FIN DE LA PRIMERA PARTE"
+                    : "Siguiente"}
                 </Button>
                 <Button
                   disabled={index === 0}
@@ -174,7 +197,7 @@ export default function VerticalLinearStepper() {
             onClick={handleReset}
             sx={{ mt: 1, mr: 1, typography: "inherit", bgcolor: "#A12330" }}
           >
-            CONTINUAR
+            CONTINUAR A LOS MISTERIOS DEL DÍA
           </Button>
         </Paper>
       )}
