@@ -1,11 +1,12 @@
 "use client";
 import Header from "@/components/Header";
-import OracionesPrimeraParte from "@/components/OracionesPrimeraParte";
+import OracionesParteFinal from "@/components/OracionesParteFinal";
 
 export default function Page() {
   return (
     <>
       <Header />
+      <OracionesParteFinal />
     </>
   );
 }
