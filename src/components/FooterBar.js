@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, IconButton, Typography } from "@mui/material";
-import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import ArrowForward from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/navigation";
 
 const FooterBar = ({ activeIndex, setActiveIndex, etiquetas }) => {
@@ -12,7 +12,7 @@ const FooterBar = ({ activeIndex, setActiveIndex, etiquetas }) => {
     { label: etiquetas[2] || "0" },
     { label: etiquetas[3] || "0" },
     { label: etiquetas[4] || "0" },
-    { icon: <EmojiPeopleIcon fontSize="medium" />, label: "Oración" },
+    { icon: <ArrowForward fontSize="medium" />, label: "Oración" },
   ];
 
   return (
