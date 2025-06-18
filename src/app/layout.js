@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import Header from "@/components/Header";
 import { Inter, Playfair_Display } from "next/font/google";
 
 const inter = Inter({
@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Emaus Cristo Rey Cali",
+  title: "Emaus Cristo Rey Cali - Santo Rosario",
   description: "Santo Rosario",
 };
 
@@ -24,7 +24,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        {children}
+        <div
+          style={{
+            maxWidth: "900px",
+            margin: "0 auto",
+            minHeight: "100vh",
+            background: "#fff",
+          }}
+        >
+          {children}
+        </div>
       </body>
     </html>
   );
