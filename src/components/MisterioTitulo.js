@@ -193,7 +193,7 @@ const MisterioTitulo = ({ misterioIndex = 0 }) => {
   const misterio = data.misterios[misterioIndex] || {};
 
   return (
-    <Box sx={{ textAlign: "center", mt: 10, mb: 2 }}>
+    <Box sx={{ textAlign: "center", mt: 12, mb: 2 }}>
       <Typography variant="h5" sx={{ fontWeight: "bold", color: "#A12330" }}>
         {data.tipo}
       </Typography>
@@ -202,7 +202,7 @@ const MisterioTitulo = ({ misterioIndex = 0 }) => {
       </Typography>
       <Typography
         variant="body1"
-        sx={{ color: "#555", mt: 1, whiteSpace: "pre-line" }}
+        sx={{ color: "#555", mt: 1, whiteSpace: "pre-line", padding: 2 }}
       >
         {misterio.cita}
       </Typography>

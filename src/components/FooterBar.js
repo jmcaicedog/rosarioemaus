@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, IconButton, Typography } from "@mui/material";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import { useRouter } from "next/navigation";
 
 const FooterBar = ({ activeIndex, setActiveIndex, etiquetas }) => {
+  const router = useRouter();
+
   const icons = [
     { label: etiquetas[0] || "0" },
     { label: etiquetas[1] || "0" },
@@ -31,7 +34,13 @@ const FooterBar = ({ activeIndex, setActiveIndex, etiquetas }) => {
       {icons.map((item, index) => (
         <IconButton
           key={index}
-          onClick={() => setActiveIndex(index)}
+          onClick={() => {
+            if (index === 5) {
+              router.push("/rosario_parte_final");
+            } else {
+              setActiveIndex(index);
+            }
+          }}
           sx={{
             backgroundColor: activeIndex === index ? "#A12330" : "#e0e0e0",
             color: activeIndex === index ? "#fff" : "#333",

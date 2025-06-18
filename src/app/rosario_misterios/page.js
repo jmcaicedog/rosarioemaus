@@ -4,6 +4,11 @@ import FooterBar from "@/components/FooterBar";
 import MisterioTitulo from "@/components/MisterioTitulo";
 import { useState } from "react";
 import DecenarioRosas from "@/components/DecenarioRosas";
+import PadreNuestro from "@/components/PadreNuestro";
+import AveMaria from "@/components/AveMaria";
+import Gloria from "@/components/Gloria";
+import OracionDeFatima from "@/components/OracionDeFatima";
+import Jaculatorias from "@/components/Jaculatorias";
 
 export default function Page() {
   const [misterioIndex, setMisterioIndex] = useState(0);
@@ -34,10 +39,15 @@ export default function Page() {
     <>
       <Header />
       <MisterioTitulo misterioIndex={misterioIndex} />
+      <PadreNuestro />
+      <AveMaria />
       <DecenarioRosas
         rosas={rosasPorMisterio[misterioIndex]}
         onRosaClick={handleRosaClick}
       />
+      <Gloria />
+      <OracionDeFatima />
+      <Jaculatorias />
       <FooterBar
         activeIndex={misterioIndex}
         setActiveIndex={setMisterioIndex}
