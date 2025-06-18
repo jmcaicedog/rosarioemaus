@@ -18,8 +18,6 @@ export default function Header() {
 
       {/* Título */}
       <h1 className="text-lg font-bold text-center text-[#A12330] absolute left-1/2 transform -translate-x-1/2">
-        SANTO ROSARIO
-        <br />
         EMAÚS CRISTO REY
       </h1>
 
@@ -27,7 +25,7 @@ export default function Header() {
       <div className="w-14 h-14 relative">
         <Image
           onClick={() => router.push("/")}
-          src="/logo.jpg" // asegúrate de tener esta imagen en la carpeta public/
+          src="/logo.jpg"
           alt="Logo del Rosario"
           fill
           className="object-contain"

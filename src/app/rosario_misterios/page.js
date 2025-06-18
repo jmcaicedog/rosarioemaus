@@ -9,6 +9,7 @@ import AveMaria from "@/components/AveMaria";
 import Gloria from "@/components/Gloria";
 import OracionDeFatima from "@/components/OracionDeFatima";
 import Jaculatorias from "@/components/Jaculatorias";
+import MadreMisericordia from "@/components/MadreMisericordia";
 
 export default function Page() {
   const [misterioIndex, setMisterioIndex] = useState(0);
@@ -40,6 +41,7 @@ export default function Page() {
       <Header />
       <MisterioTitulo misterioIndex={misterioIndex} />
       <PadreNuestro />
+      <MadreMisericordia />
       <AveMaria />
       <DecenarioRosas
         rosas={rosasPorMisterio[misterioIndex]}
