@@ -7,6 +7,7 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import { useRouter } from "next/navigation";
 
 const DiaActual = () => {
   const getDiaDelAño = () => {
@@ -113,6 +114,8 @@ const steps = [
 ];
 
 export default function OracionesPrimeraParte() {
+  const router = useRouter();
+
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -124,7 +127,8 @@ export default function OracionesPrimeraParte() {
   };
 
   const handleReset = () => {
-    setActiveStep(0);
+    //setActiveStep(0);
+    router.push("/rosario_misterios");
   };
 
   return (
