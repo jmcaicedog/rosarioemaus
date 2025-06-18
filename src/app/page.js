@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center justify-center bg-white text-center px-4 mt-24">
+      <main className="flex flex-col items-center justify-center bg-white text-center px-4 mt-48">
         <div>
           <Image
             src="/portada.webp"

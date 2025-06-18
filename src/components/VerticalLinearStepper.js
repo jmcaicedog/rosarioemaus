@@ -128,7 +128,9 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 900, padding: 2, fontFamily: "inherit" }}>
+    <Box
+      sx={{ maxWidth: 900, padding: 2, fontFamily: "inherit", marginTop: 12 }}
+    >
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
