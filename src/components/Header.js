@@ -47,7 +47,7 @@ export default function Header() {
               router.push("/");
             }}
           >
-            Santo Rosario
+            Santo Rosario de La Virgen María
           </button>
         </div>
       )}

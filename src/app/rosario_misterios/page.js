@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import FooterBar from "@/components/FooterBar";
 import MisterioTitulo from "@/components/MisterioTitulo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DecenarioRosas from "@/components/DecenarioRosas";
 import PadreNuestro from "@/components/PadreNuestro";
 import AveMaria from "@/components/AveMaria";
@@ -19,6 +19,16 @@ export default function Page() {
       .fill(null)
       .map(() => Array(10).fill(false))
   );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [misterioIndex]);
+
+  const handleSetMisterioIndex = (index) => {
+    setMisterioIndex(index);
+  };
 
   // Actualiza el estado de las rosas para el misterio actual
   const handleRosaClick = (idx) => {
@@ -52,7 +62,7 @@ export default function Page() {
       <Jaculatorias />
       <FooterBar
         activeIndex={misterioIndex}
-        setActiveIndex={setMisterioIndex}
+        setActiveIndex={handleSetMisterioIndex}
         etiquetas={etiquetas}
       />
     </>
