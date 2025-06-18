@@ -18,6 +18,9 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: "Emaus Cristo Rey Cali - Santo Rosario",
   description: "Santo Rosario",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
