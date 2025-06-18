@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         <button
-          onClick={() => router.push("/rosario")}
+          onClick={() => router.push("/rosario_primera_parte")}
           className="bg-[#A12330] text-white font-semibold px-6 py-2 mt-4 rounded-lg shadow hover:bg-rosewood/90 transition"
         >
           Iniciar Rosario

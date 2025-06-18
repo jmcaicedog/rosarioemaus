@@ -112,7 +112,7 @@ const steps = [
   },
 ];
 
-export default function VerticalLinearStepper() {
+export default function OracionesPrimeraParte() {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
