@@ -26,7 +26,7 @@ const dia = DiaActual();
 const steps = [
   {
     label: "Salve",
-    description: `Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra.
+    description: `Dios te salve, Reina y Madre, Madre de misericordia, vida, dulzura y esperanza nuestra.
     Dios te salve. A Ti clamamos los desterrados hijos de Eva,
     a Ti suspiramos, gimiendo y llorando en este valle de lágrimas.
     Ea, pues, Señora Abogada Nuestra, vuelve a nosotros tus ojos misericordiosos,
