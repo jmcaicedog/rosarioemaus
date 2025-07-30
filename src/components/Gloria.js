@@ -22,6 +22,8 @@ export default function Gloria() {
       >
         Gloria al Padre y al Hijo y al Espíritu Santo.
         <br />
+        Como era en el principio, ahora y siempre, por los siglos de los siglos.
+        <br />
         Amén.
       </Typography>
     </div>
