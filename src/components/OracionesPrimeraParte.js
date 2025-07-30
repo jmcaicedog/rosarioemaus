@@ -96,7 +96,25 @@ const steps = [
   {
     label: "Acto de Contrición",
     description: `Jesús, mi Señor y Redentor, yo me arrepiento de todos los pecados que he cometido hasta hoy y me pesa de todo corazón, porque con ellos he ofendido a un Dios tan bueno.
+
+    Propongo firmemente no volver a pecar y confío en que por tu infinita misericordia, me has de conceder el perdón de mis culpas y me has de llevar a la vida eterna.
     
+    Amén.
+    
+    `,
+  },
+  {
+    label: "Oración al Espíritu Santo",
+    description: `Ven Espíritu Santo, envía tu luz desde el cielo. Padre amoroso del pobre; don, en tus dones espléndido; luz que penetra las almas; fuente del mayor consuelo.
+
+    Ven, dulce huésped del alma, descanso de nuestro esfuerzo, tregua en el duro trabajo, brisa en las horas de fuego, gozo que enjuga las lágrimas y reconforta en los duelos.
+
+    Entra hasta el fondo del alma, divina luz y enriquécenos. Mira el vacío del hombre si Tú le faltas por dentro; mira el poder del pecado cuando no envías tu aliento.
+
+    Riega la tierra en sequía, sana el corazón enfermo, lava las manchas, infunde calor de vida en el hielo, doma el espíritu indómito, guía al que tuerce el sendero.
+
+    Reparte tus Siete Dones según la fe de tus siervos. Por tu bondad y tu gracia dale al esfuerzo su mérito; salva al que busca salvarse y danos tu gozo eterno.
+
     Amén.
     
     `,
